@@ -127,7 +127,7 @@ func BaseExample(session *mgo.Session) {
 	}
 	fmt.Println("result:", result)
 
-	// find all
+	// find all games ordered in reverse order by the field start
 	var results []Game
 	err = c.Find(nil).Sort("-start").All(&results)
 	if err != nil {
