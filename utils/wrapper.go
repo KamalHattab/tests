@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	"gopkg.in/mgo.v2" 
+	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 )
 
@@ -29,6 +29,7 @@ func CreatePlayers() []Player {
 		NewPlayer("Seth", "Spies", "Leprechauns", 10, 4),
 		NewPlayer("Kamal", "Aliens", "Dinosaurs", 17, 3),
 		NewPlayer("Rodrigo", "Spies", "Leprechauns", 10, 4),
+		NewPlayer("Irina", "jkjkjkk", "kjkjkj", 13, 2),
 	}
 }
 
@@ -182,6 +183,3 @@ func UpdateValueArray(session *mgo.Session) {
 	b, _ := json.Marshal(result)
 	fmt.Print("result:", string(b))
 }
-
-
-
