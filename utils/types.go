@@ -48,8 +48,7 @@ type Result struct {
 const (
 	Username            = ""
 	Password            = ""
-	Database            = "db_test"
+	Database            = "db_main"
 	Collection          = "table_test"
 	CollectionInventory = "inventory_go"
 )
-
