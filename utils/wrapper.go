@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	"gopkg.in/mgo.v2"
+	"gopkg.in/mgo.v2" 
 	"gopkg.in/mgo.v2/bson"
 )
 
@@ -183,12 +183,5 @@ func UpdateValueArray(session *mgo.Session) {
 	fmt.Print("result:", string(b))
 }
 
-// session, err := mgo.DialWithInfo(dialInfo) //mgo.Dial("127.0.0.1") //mgo.DialWithTimeout("devellinuxvm", dialInfo.Timeout)
-// dialInfo, err := mgo.ParseURL("devellinuxvm:27017")
-// dialInfo.Direct = true
-// dialInfo.FailFast = true
 
-// dialInfo, err := mgo.ParseURL("127.0.0.1:27017") //mgo.DialWithInfo(dialInfo)
-// dialInfo.Direct = true
-// dialInfo.FailFast = true
 
